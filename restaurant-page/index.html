@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron &amp; Ember | Fine Dining Restaurant</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">Saffron &amp; Ember</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#restaurantNav" aria-controls="restaurantNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="restaurantNav">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <span class="badge hero-badge text-uppercase px-3 py-2 mb-3">Wood-Fired Culinary Art</span>
+            <h1 class="display-3 fw-bold mb-3">Flavors Crafted Over Open Flame</h1>
+            <p class="lead mb-4 mx-auto hero-subtitle">Experience seasonal ingredients, artisanal spices, and warm hospitality in the heart of the city.</p>
+            <a href="#menu" class="btn btn-terracotta btn-lg fw-semibold px-4 py-2">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section (Grid Layout with Cards & Badges) -->
+    <section id="menu" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold section-title">Our Signature Menu</h2>
+                <p class="text-muted mt-2">Prepared fresh daily by our executive culinary team</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Menu Item 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 menu-card">
+                        <img src="dish1.jpg" class="card-img-top" alt="Charred Avocado Bowl">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">Charred Avocado Bowl</h5>
+                                <span class="badge bg-success-subtle text-success">Chef's Pick</span>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Fire-roasted Hass avocado, heirloom tomatoes, citrus vinaigrette, and toasted pumpkin seeds.</p>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                <span class="price-tag">$18.50</span>
+                                <button type="button" class="btn btn-sm btn-outline-dark">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 menu-card">
+                        <img src="dish2.jpg" class="card-img-top" alt="Ember-Grilled Ribeye">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">Ember-Grilled Ribeye</h5>
+                                <span class="badge bg-danger-subtle text-danger">Popular</span>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">12oz prime cut seared over oak wood, served with garlic herb butter and truffle potato purée.</p>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                <span class="price-tag">$36.00</span>
+                                <button type="button" class="btn btn-sm btn-outline-dark">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 menu-card">
+                        <img src="dish3.jpg" class="card-img-top" alt="Saffron Prawn Pasta">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">Saffron Prawn Pasta</h5>
+                                <span class="badge bg-warning-subtle text-dark">Signature</span>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Handmade ribbon pasta tossed with wild tiger prawns, roasted garlic, white wine, and saffron cream.</p>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                <span class="price-tag">$27.00</span>
+                                <button type="button" class="btn btn-sm btn-outline-dark">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section (Two-Column Grid) -->
+    <section id="about" class="py-5 about-section">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <img src="about.jpg" class="img-fluid about-img" alt="Inside Saffron and Ember Restaurant">
+                </div>
+                <div class="col-md-6">
+                    <span class="text-uppercase fw-bold about-tag">Our Story</span>
+                    <h2 class="display-6 fw-bold mt-1 mb-3">A Gathering Place for Food Lovers</h2>
+                    <p class="text-muted">Founded in 2018, <strong>Saffron &amp; Ember</strong> began with a simple vision: bring together traditional open-fire cooking techniques and locally harvested organic produce.</p>
+                    <p class="text-muted mb-4">Every dish on our menu tells a story of craftsmanship, balancing bold smoky aromas with delicate, fresh finishes. Whether you are celebrating a milestone or enjoying a casual dinner, our table is always set for you.</p>
+                    <a href="#contact" class="btn btn-terracotta px-4 py-2">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="p-4 p-md-5 contact-card">
+                        <h2 class="text-center fw-bold mb-2">Contact Us</h2>
+                        <p class="text-muted text-center mb-4">Have a question about private dining or reservations? Send us a message.</p>
+                        
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="jane@example.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-terracotta w-100 py-2 fw-semibold">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+             <p class="mb-2 mb-md-0">&copy; 2026 Saffron &amp; Ember Restaurant. All rights reserved.</p>
+            <div class="d-flex gap-3 fs-5">
+                <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+</body>
+</html>

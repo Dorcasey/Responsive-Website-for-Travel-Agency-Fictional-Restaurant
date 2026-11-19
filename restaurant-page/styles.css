@@ -1,0 +1,177 @@
+
+/* Google Fonts Import */
+@import url('https://googleapis.com');
+
+/* Global Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #faf8f5;
+    color: #2c2523;
+    line-height: 1.6;
+}
+
+h1, h2, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Custom Navigation Bar */
+.custom-navbar {
+    background-color: #231b18;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-navbar .navbar-brand {
+    color: #f4a261;
+    letter-spacing: 0.5px;
+}
+
+.custom-navbar .nav-link {
+    color: #faf8f5;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #e07a5f;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(20, 15, 13, 0.65), rgba(20, 15, 13, 0.78)),
+                url('hero.jpg') center/cover no-repeat;
+    min-height: 80vh;
+    padding: 4rem 1rem;
+}
+
+.hero-badge {
+    background-color: #c85a32;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+}
+
+.hero-subtitle {
+    max-width: 620px;
+    color: #e6dfd9;
+}
+
+/* Custom Buttons */
+.btn-terracotta {
+    background-color: #c85a32;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-terracotta:hover {
+    background-color: #a84623;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Section Headings */
+.section-title {
+    color: #231b18;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #c85a32;
+    bottom: 0;
+    left: 20%;
+}
+
+/* Menu Cards */
+.menu-card {
+    background-color: #ffffff;
+    border: 1px solid #efeae4;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(35, 27, 24, 0.12);
+}
+
+.menu-card img {
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+    transform: scale(1.04);
+}
+
+.price-tag {
+    color: #c85a32;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: #ffffff;
+    border-top: 1px solid #efeae4;
+    border-bottom: 1px solid #efeae4;
+}
+
+.about-tag {
+    color: #c85a32;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+}
+
+.about-img {
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(35, 27, 24, 0.12);
+}
+
+/* Contact Form Card */
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #efeae4;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(35, 27, 24, 0.06);
+}
+
+.contact-card .form-control {
+    border-color: #d6ccc2;
+    background-color: #fdfcfb;
+    padding: 0.75rem 1rem;
+}
+
+.contact-card .form-control:focus {
+    border-color: #c85a32;
+    box-shadow: 0 0 0 0.2rem rgba(200, 90, 50, 0.2);
+}
+
+/* Footer */
+.custom-footer {
+    background-color: #231b18;
+    color: #d6ccc2;
+}
+
+.social-link {
+    color: #d6ccc2;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+    color: #e07a5f;
+    transform: translateY(-2px);
+}

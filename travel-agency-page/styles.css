@@ -1,0 +1,172 @@
+/* 1. Google Fonts Import */
+@import url('https://googleapis.com');
+
+/* 2. Global Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+h1, h2, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 3. Navigation Bar */
+.custom-navbar {
+    background-color: #0f2942;
+    box-shadow: 0 2px 12px rgba(15, 41, 66, 0.15);
+}
+
+.custom-navbar .navbar-brand {
+    color: #38bdf8;
+    letter-spacing: 0.4px;
+}
+
+.custom-navbar .nav-link {
+    color: #f1f5f9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #38bdf8;
+}
+
+/* 4. Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(10, 25, 47, 0.58), rgba(10, 25, 47, 0.72)),
+                url('travel-hero.jpg') center/cover no-repeat;
+    min-height: 80vh;
+    padding: 4rem 1rem;
+}
+
+.hero-badge {
+    background-color: #0d9488;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+}
+
+.hero-subtitle {
+    max-width: 640px;
+    color: #e2e8f0;
+}
+
+/* 5. Custom Buttons */
+.btn-teal {
+    background-color: #0d9488;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-teal:hover {
+    background-color: #0f766e;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* 6. Section Headings */
+.section-title {
+    color: #0f2942;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #0d9488;
+    bottom: 0;
+    left: 20%;
+}
+
+/* 7. Destination Cards */
+.destination-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(15, 41, 66, 0.12);
+}
+
+.destination-card img {
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.04);
+}
+
+.price-tag {
+    color: #0d9488;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* 8. Tours Accordion Section */
+.tours-section {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f0fdfa;
+    color: #0f2942;
+}
+
+/* 9. Contact Form Card */
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(15, 41, 66, 0.06);
+}
+
+.contact-card .form-control,
+.contact-card .form-select {
+    border-color: #cbd5e1;
+    background-color: #f8fafc;
+    padding: 0.75rem 1rem;
+}
+
+.contact-card .form-control:focus,
+.contact-card .form-select:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 0.2rem rgba(13, 148, 136, 0.2);
+}
+
+/* 10. Footer */
+.custom-footer {
+    background-color: #0f2942;
+    color: #cbd5e1;
+}
+
+.social-link {
+    color: #cbd5e1;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
